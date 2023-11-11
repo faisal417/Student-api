@@ -4,7 +4,6 @@ import asyncHandler from "express-async-handler";
 
 //verify a token
 export const verifyToken = (req, res, next) => {
-  console.log(req);
   //get token from cookie
   const { accessToken } = req.cookies;
 
